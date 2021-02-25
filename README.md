@@ -1,2 +1,2 @@
 # WSR-Samara
-Проект "Безопасное Дорожное Движение" с Финала Национального чемпионата России "Молодые профессионалы" (WorldSkills Russia) по компетенции «Разработка решений с использованием блокчейн технологий». 
+The project "Safe Road Traffic" from the Final of the National Championship of Russia "Young Professionals" (WorldSkills Russia) in the competence "Development of solutions using blockchain technologies".
