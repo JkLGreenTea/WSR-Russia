@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='table.css') }}">
+{% endblock %}
+
+{% block content %}
+    <table>
+        <h1>
+            Список штрафов
+        </h1>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Дата
+            </th>
+            <th>
+                Статус
+            </th>
+        </tr>
+        {% if list_fines %}
+            {% for fines in list_fines %}
+                <tr>
+                    <td>{{ fines[0] }}</td>
+                    <td>{{ datetime.strftime(datetime.fromtimestamp(fines[1]), '%d.%m.%Y %H:%M:%S') }}</td>
+                    {% if fines[2] %}
+                        <td style="color:green;">Оплачен</td>
+                    {% else %}
+                        <td style="color:red;">Не оплачен</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </table>
+{% endblock %}

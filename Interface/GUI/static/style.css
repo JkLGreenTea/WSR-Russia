@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+html{
+    font-family: "Comic Sans MS";
+}
+
+#main{
+    background: #191919;
+    width: 100%;
+    height: 87vh;
+}
